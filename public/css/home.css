@@ -15,8 +15,9 @@ body {
     padding: 20px;
 }
 
+
 .sidebar .nav-link i {
-    color: #b20035;
+    color: #a0264c;
     height: 30px;
     
 }
@@ -59,7 +60,7 @@ h4 {
 }
 
 b {
-    color: #b20035;
+    color: #a0264c;
 }
 
 .card {
