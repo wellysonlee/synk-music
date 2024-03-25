@@ -27,7 +27,8 @@
             <input id="password" type="password" name="password" required placeholder="Senha">
         </div>
         <div>
-            <button type="submit">Entrar</button>
+         <button id="login-button" type="submit">Entrar</button>
+
         </div>
         <div class="cadastro">
             <p>Não tem conta? <br><a href="{{ route('register') }}">Cadastre-se</a></p>
@@ -35,6 +36,10 @@
 
     </form>
 </section>
-
+    <script>
+        document.getElementById('login-button').addEventListener('click', function() {
+            window.location.href = '/home';
+        });
+    </script>
 </body>
 </html>

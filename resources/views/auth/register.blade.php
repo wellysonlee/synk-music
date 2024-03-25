@@ -44,6 +44,10 @@
                 
             </div>     
         </form> 
-       
+        <script>
+        document.getElementById('register-button').addEventListener('click', function() {
+            window.location.href = '/login';
+        });
+    </script>
 </section>
 </body>
