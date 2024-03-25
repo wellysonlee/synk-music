@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Cor de fundo do corpo da página */
+}
+
+.logo {
+    position: absolute;
+    right: 10px;
+    height: 80px;
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sidebar .nav-link i {
+    color: #b20035;
+    height: 30px;
+    
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 10%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.card-img-top {
+    width: 80%; /* Tamanho da imagem */
+    height: 150px; /* Tamanho da imagem */
+    border-radius: 10%; /* Tornar a imagem circular */
+    margin-top: 20px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color:aliceblue;
+    margin-bottom: 25px;
+}
+
+h4 {
+    color: #ced4da;
+}
+
+b {
+    color: #b20035;
+}
+
+.card {
+    border: 1px solid #121212; /* Cor da borda do card */
+    border-radius: 8px; /* Cantos arredondados */
+    overflow: hidden; /* Esconder partes da imagem que excedam o card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra do card */
+    transition: transform 0.3s ease; /* Efeito de transição */
+    width: 100%;
+    color: #ced4da;
+    background-color: #272626;
+    align-items:center;
+    height: 210px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumentar o tamanho do card ao passar o mouse sobre ele */
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-title {
+    margin-top:  flex; 
+}
+
+.col-md-4 {
+    flex: 0 0 calc(50% - 20px); /* Para exibir 2 cards por linha em telas pequenas */
+    max-width: calc(50% - 20px); /* Para exibir 2 cards por linha em telas pequenas */
+}
+
+@media (max-width: 768px) {
+    ul li {
+        margin-right: 10px;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-4 {
+        flex: 0 0 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+.btn-explore {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: #121212;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.btn-explore:hover {
+    background-color: #b20035;
+}
