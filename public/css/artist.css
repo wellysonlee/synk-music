@@ -64,6 +64,7 @@ h4 {
 
 b {
     color: #a0264c;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra do card */
 }
 
 .conteudo {
