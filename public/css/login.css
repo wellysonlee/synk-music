@@ -72,6 +72,9 @@ body, html {
     display: block; /* Garante que a logo seja exibida como um bloco */
     margin: 0 auto 20px; /* Margem automática para centralizar horizontalmente e adicionar espaço abaixo */
 }
+.logo:hover {
+    transform: scale(1.05); /* Aumentar o tamanho do card ao passar o mouse sobre ele */
+}
 
 label, input, button {
     display: block; /* Torna os elementos em blocos para que ocupem toda a largura disponível */

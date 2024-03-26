@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #121212; /* Cor de fundo do corpo da página */
+    margin-top: 2%;
 }
 
 .logo {
@@ -15,16 +16,11 @@ body {
     transform: scale(1.05); /* Aumentar o tamanho do card ao passar o mouse sobre ele */
 }
 
-.container {
-    margin: 0 auto;
-    padding: 20px;
-}
-
-
+/*navegação com icones*/
 .sidebar .nav-link i {
     color: #a0264c;
     height: 30px;
-    
+      
 }
 
 .col-2 {
@@ -43,61 +39,70 @@ ul li {
     font-size: 20px;
 }
 
-.card-img-top {
-    width: 80%; /* Tamanho da imagem */
-    height: 150px; /* Tamanho da imagem */
-    border-radius: 10%; /* Tornar a imagem circular */
-    margin-top: 20px;
+/*artista e frase*/
+.apresentacao {
+    width: 30%;
 }
-
-.card-title {
-    text-align: center;
-}
-
 h1 {
-    text-align: center;
     color:aliceblue;
     margin-bottom: 25px;
+    margin-top: 50px;
 }
 
+.img-artist {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra do card */
+}
+
+/*albuns*/
 h4 {
     color: #ced4da;
+    font-size: 20px;
 }
 
 b {
     color: #a0264c;
 }
 
+.conteudo {
+    margin-top: 120px;
+}
+
+.card-img-top {
+    width: 70%; /* Tamanho da imagem */
+    height: 70%; /* Tamanho da imagem */
+    border-radius: 10%; /* Tornar a imagem circular */
+    margin-top: 15px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 10px;
+    margin-top: -5px;
+}
+
 .card {
-    border: 1px solid #121212; /* Cor da borda do card */
+    border: 1px solid black; /* Cor da borda do card */
     border-radius: 8px; /* Cantos arredondados */
     overflow: hidden; /* Esconder partes da imagem que excedam o card */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra do card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra do card */
     transition: transform 0.3s ease; /* Efeito de transição */
-    width: 100%;
     color: #ced4da;
-    background-color: #272626;
+    background-color: rgba(0, 0, 0, 0.8);
     align-items:center;
-    height: 210px;
+    height: 150px;
+    width: 100%;
 }
 
 .card:hover {
     transform: scale(1.05); /* Aumentar o tamanho do card ao passar o mouse sobre ele */
 }
 
-.card-body {
-    padding: 10px;
-    text-align: center;
-}
 
-.card-title {
-    margin-top:  flex; 
-}
 
-.col-md-4 {
-    flex: 0 0 calc(50% - 20px); /* Para exibir 2 cards por linha em telas pequenas */
-    max-width: calc(50% - 20px); /* Para exibir 2 cards por linha em telas pequenas */
-}
+
 
 @media (max-width: 768px) {
     ul li {
@@ -111,19 +116,4 @@ b {
     }
 }
 
-.btn-explore {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    background-color: #121212;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100px;
-}
 
-.btn-explore:hover {
-    background-color: #272626;
-}

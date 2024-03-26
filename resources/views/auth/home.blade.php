@@ -130,10 +130,8 @@
                 <!-- Adicione mais colunas com cards aqui -->
             </div>
             <button class="btn-explore" onclick="location.href='/mais-artistas'">>>> <br> mais</button>
-
-
-            <!-- Adicione mais divs com classe 'row' para mais linhas de cards -->
         </div>
+
     </main>
 </body>
 </html>

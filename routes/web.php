@@ -15,3 +15,6 @@ Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@showRegis
 
 Route::get('/home', 'App\Http\Controllers\Auth\HomePageController@showHomePageForm')->name('home');
 Route::post('/home', 'App\Http\Controllers\Auth\HomePageController@showHomePageForm');
+
+Route::get('/artist', 'App\Http\Controllers\Auth\ArtistController@showArtistForm')->name('artist');
+Route::post('/artist', 'App\Http\Controllers\Auth\ArtistController@showArtistForm');
