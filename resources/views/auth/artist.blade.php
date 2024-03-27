@@ -29,7 +29,7 @@
                 <h1>Você selecionou <br><b>Ariana Grande</b></h1>
                 <img src="{{ asset('assets/images/ariana.jpg') }}" class="img-artist" alt="Ariana Grande">
             </div>
-            <div class="conteudo col-md-6">
+            <div class="conteudo col-md-3">
                 <h4>Explore a coleção completa de álbuns deste artista: </h4>
                 <!-- Aqui começam os cards dos álbuns -->
                 <div class="row">

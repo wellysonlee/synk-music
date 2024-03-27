@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Cor de fundo do corpo da página */
+    margin-top: 2%;
+}
+
+.logo {
+    position: absolute;
+    right: 10px;
+    height: 80px;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Aumentar o tamanho do card ao passar o mouse sobre ele */
+}
+
+/*navegação com icones*/
+.sidebar .nav-link i {
+    color: #a0264c;
+    height: 30px;
+      
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 10%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/*apresentação */
+h1 {
+    color:aliceblue;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+h5 {
+    color: #fff;
+}
+h5 {
+    font-size: 15px;
+    color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+h6 {
+    font-size: 16.5px;
+    color: aliceblue;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.img-album {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra do card */
+    margin-top: 50px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centraliza os ícones verticalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.botoes .btn {
+    display: flex;
+    justify-content: center;
+    align-items: left; /* Centraliza os conteúdos horizontalmente */
+    border-radius: 50px; /* Torna os botões redondos */
+    color: #a0264c; /* Cor do texto dos botões */
+    border-color: #a0264c; /* Cor da borda dos botões */
+    transition: all 0.3s ease; /* Transição suave ao passar o mouse */
+    margin-top: 10px;
+}
+
+.botoes .btn i {
+    margin-right: 1px; /* Adiciona um pequeno espaço entre o ícone e o texto */
+}
+
+.botoes .btn:hover {
+    background-color: #a0264c; /* Altera a cor de fundo ao passar o mouse */
+    color: #fff; /* Altera a cor do texto ao passar o mouse */
+}
+
+.img-artist {
+    width: 30px;
+    height: 30px;
+    border-radius: 100% ;
+    margin-top: 20px;
+}
+.artist-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.artist-profile h6 {
+    order: 2; /* Define a ordem do elemento h6 */
+}
+
+.artist-profile .img-artist {
+    order: 1; /* Define a ordem da imagem */
+}
+
+/* lista*/
+.card {
+    background-color: #121212; /* Cor de fundo do card */
+    color: white; /* Cor do texto */
+    height: 50px;
+    text-align: baseline;
+    border: none;
+}
+
+.card-body {
+    padding: 10px; /* Espaçamento interno do card */
+}
+
+.artist-name {
+    font-size: 10px; /* Tamanho da fonte para o nome do artista */
+    color: #808080; /* Cor do texto do nome do artista */
+    margin-top: 1px; /* Espaçamento superior */
+}
+
+
+.card-title {
+    font-size: 16px; /* Tamanho da fonte do título */
+    margin-bottom: 0; /* Remover margem inferior do título */
+}
+
+.col-md-1, .col-md-2, .col-md-10{
+    padding-top: 10px; /* Espaço superior para centralizar verticalmente o conteúdo */
+    color: gray;
+}
+

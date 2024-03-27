@@ -18,3 +18,6 @@ Route::post('/home', 'App\Http\Controllers\Auth\HomePageController@showHomePageF
 
 Route::get('/artist', 'App\Http\Controllers\Auth\ArtistController@showArtistForm')->name('artist');
 Route::post('/artist', 'App\Http\Controllers\Auth\ArtistController@showArtistForm');
+
+Route::get('/album', 'App\Http\Controllers\Auth\AlbumController@showAlbumForm')->name('album');
+Route::post('/album', 'App\Http\Controllers\Auth\AlbumController@showAlbumForm');
