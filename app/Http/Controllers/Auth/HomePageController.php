@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class HomePageController extends Controller
 {
-    public function showHomePageForm()
-{
-    return view('auth.home');
-}
+    public function showHomePage()
+    {
+        return view('auth.home'); // Retorna a view home.blade.php localizada em resources/views/auth
+    }
 }
