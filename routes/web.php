@@ -1,28 +1,28 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\HomePageController;
 
-Route::get('/', function () {
-    return redirect()->route('login');
-});
-
-Route::get('/login', 'App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
+// Rota de Login
+Route::get('/login', 'App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login')->middleware('guest');
 Route::post('/login', 'App\Http\Controllers\Auth\LoginController@login');
-Route::post('/logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+
+// Rota de Logout
+Route::post('/logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout')->middleware('auth');
 
 // Rotas de Registro
-Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@showRegistrationForm')->name('register');
-Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@register');
+Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@showRegistrationForm')->name('register')->middleware('guest');
+Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@register')->middleware('guest');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/', 'App\Http\Controllers\Auth\HomePageController@showHomePage')->name('home');
-    Route::post('/', 'App\Http\Controllers\Auth\HomePageController@showHomePage');
-});
+// Rota da Home
+Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->middleware('auth');
 
 
-Route::get('/', 'App\Http\Controllers\Auth\HomePageController@showHomePage')->name('home');
-Route::post('/', 'App\Http\Controllers\Auth\HomePageController@showHomePage');
+// Redirecionar a rota raiz para o login (caso não autenticado)
+Route::redirect('/', '/login');
+
 
 /*
 Route::get('/artist', 'App\Http\Controllers\Auth\ArtistController@showArtistForm')->name('artist');
